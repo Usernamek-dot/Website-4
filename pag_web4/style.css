@@ -1,0 +1,310 @@
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 650px;
+    background-image: url(img/fondo2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: #2d3436;
+    text-align: center;
+    font-family: 'Girassol', cursive;
+}
+
+header .texts {
+    margin-top: 152px;
+}
+
+header .title {
+    font-size: 85px;
+}
+
+header .subtitle {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+
+.sesgoabajo {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.sesgoarriba {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 35vh 100vw 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 52px 0;
+}
+
+.about-us {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.paragraph {
+    margin-bottom: 14px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 24px;
+    font-size: 24px;
+}
+
+.button {
+    display: inline-block;
+    padding: 9px;
+    width: 140px;
+    font-weight: 300;
+    border: 1px solid #dbf022;
+    color: #2d3436;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 24px;
+}
+
+
+
+/*galery*/
+.galery {
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.images {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.over {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 73, 94, 0.925);
+}
+
+.over h2 {
+    position: relative;
+    top: 45%;
+    text-align: center;
+    color: white;
+}
+
+/*sección3*/
+.cards {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 20px 0;
+    width: 30%;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 4px 0px rgb(26, 188, 156);
+}
+
+.cards img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+/*section 4*/
+.font {
+    height: 890px;
+    position: relative;
+    background-image: url(img/fondo2.jpg);
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-top: 130px;
+}
+
+.sesgoabajo-unico {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #e67e22 transparent;
+}
+
+.title,
+.subtitle {
+    color: #fff;
+    text-align: center;
+}
+
+.title {
+    font-size: 60px;
+    margin-top: 48px;
+}
+
+.subtitle {
+    font-size: 32px;
+}
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.client {
+    width: 25%;
+    margin-left: 3px;
+}
+
+.client img {
+    width: 100%;
+}
+
+/*footer*/
+footer {
+    background: #e67e22;
+}
+
+.title-footer {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 64px;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+input[type='text'],
+input[type='email'] {
+    display: inline-block;
+    width: 48%;
+    padding: 13px;
+    color: white;
+    font-family: cursive;
+    background: ;
+    margin-bottom: 16px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    background: ;
+    padding: 13px;
+    color: white;
+    font-family: cursive;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus {
+    border-top: 5px solid rgba(255, 255, 255, 0.7);
+}
+
+input[type='submit'] {
+    color: white font-family: cursive;
+    background: ;
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 25%;
+    padding: 13px;
+}
+
+/*querys*/
+
+@media screen and (max-width:900px) {
+    .card {
+        width: 48%;
+    }
+
+}
+
+@media screen and (max-width:610px) {
+    header .texts {
+        margin-top: 130px;
+    }
+
+    header .title {
+        font-size: 75px;
+    }
+
+    /*section2*/
+    .none {
+        display: none;
+    }
+
+    .images {
+        flex-grow: 1;
+    }
+
+    /*section 4*/
+    .card {
+        width: 90%;
+    }
+
+    /*section5*/
+    .font {
+        height: auto;
+    }
+
+    .client {
+        width: 90%;
+        height: 200px;
+        margin-bottom: 50px;
+    }
+}
